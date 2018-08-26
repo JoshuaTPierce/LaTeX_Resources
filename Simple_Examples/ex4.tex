@@ -1,0 +1,77 @@
+%Add keyvals in [] brackets in documentclass declaration
+\documentclass[12pt, letterpaper, twoside]{article}
+
+%Include a package
+\usepackage[utf8]{inputenc}
+
+%Add the document title.
+\title{Second Document}
+
+%Add Author Info and Date
+\author{Hubert Farnsworth \thanks{add an acknowledgment}}
+
+\date{August, 2018}
+
+%************************************* END PREAMBLE
+
+\begin{document}
+	
+	\maketitle %generates a title
+	
+	We have now added a title, an author, and a date to our \LaTeX{} document!
+	
+	\chapter{First Chapter}
+	
+	\section{Introduction}
+	
+	This is the first section.
+	
+	Lorem  ipsum  dolor  sit  amet,  consectetuer  adipiscing  
+	elit.   Etiam  lobortisfacilisis sem.  Nullam nec mi et 
+	neque pharetra sollicitudin.  Praesent imperdietmi nec ante. 
+	Donec ullamcorper, felis non sodales...
+	
+	\section{Second Section}
+	
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+	Etiam lobortis facilisissem.  Nullam nec mi et neque pharetra 
+	sollicitudin.  Praesent imperdiet mi necante...
+	
+	\subsection{First Subsection}
+	Praesent imperdietmi nec ante. Donec ullamcorper, felis non sodales...
+	
+	\section*{Unnumbered Section}
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+	Etiam lobortis facilisissem
+	
+	The basic levels of depth are listed below:
+	
+	%-1	\part{part}
+	%0	\chapter{chapter}
+	1	\section{section}
+	2	\subsection{subsection}
+	3	\subsubsection{subsubsection}
+	4	\paragraph{paragraph}
+	5	\subparagraph{subparagraph}
+	
+	-1 (part) and 0 (chapter) are available in book class. 
+	
+	Creating a Simple Table:
+	\begin{center}
+		\begin{tabular}{ c c c }
+			cell1 & cell2 & cell3 \\ 
+			cell4 & cell5 & cell6 \\  
+			cell7 & cell8 & cell9    
+		\end{tabular}
+	\end{center}
+
+\begin{center}
+	\begin{tabular}{ |c|c|c| } 
+		\hline
+		cell1 & cell2 & cell3 \\ 
+		cell4 & cell5 & cell6 \\ 
+		cell7 & cell8 & cell9 \\ 
+		\hline
+	\end{tabular}
+\end{center}
+\end{document}

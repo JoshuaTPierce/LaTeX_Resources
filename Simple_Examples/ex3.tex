@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{../figs}}
+ 
+\title{Third Document}
+\author{Joshua Pierce \thanks{Aspen University | LI-COR Biosciences}}
+\date{February 2017}
+
+\begin{document}
+	
+	\maketitle
+	
+	%Insert an image:
+	\begin{center}
+		\includegraphics{snhu_logo.png}
+	\end{center}
+	
+	Some of the \textbf{greatest} discoveries in \underline{science} were made by \textbf{\textit{accident}}.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics{Bayes_theorem}
+	{mesh}
+		\caption{Bayes Theorem}
+		\label{fig:mesh1}
+	\end{figure}
+
+	As you can see in the figure \ref{fig:mesh1}, Bayes theorem helps explain conditional probability. Also in the page \pageref{fig:mesh1} uses the same theorem.
+	
+	\begin{itemize}
+		\item The individual entries are indicated with a black dot, a so-called bullet.
+		\item The text in the entries may be of any length.
+	\end{itemize}
+
+	\begin{enumerate}
+		\item This is the first entry in our list
+		\item The list numbers increase with each entry we add
+	\end{enumerate}
+
+\end{document}
